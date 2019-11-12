@@ -1,0 +1,50 @@
+.step-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 340px;
+    margin: auto;
+
+    text-align: center;
+}
+
+.ui.large.button.step-btn{
+    width: 340px;
+    margin: 24px auto;
+}
+
+.step-heading h5{
+    margin: 0px;
+}
+
+.step-heading h1{
+    margin: 0px 0px .4em;
+}
+
+.step-body{
+    margin-top: 17px;
+}
+.step-body p{
+    list-style-type: none;
+    font-size: 17px;
+    padding-bottom: 17px;
+    margin: 0px;
+}
+.step-body i{
+    margin-top: 4px;
+    margin-right: 10px;
+    color: tomato;
+    float: left;
+}
+.step-logo{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.step-container .step-body{
+    text-align: left;
+}
+
+.step-padding{
+    padding: 60px 32px 150px;
+}

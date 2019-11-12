@@ -1,0 +1,8 @@
+.ui.inverted.vertical.footer.segment.story-card {
+    position: relative;
+    display: flex;
+    
+    padding: 70px 45px;
+
+    color: white;
+}
