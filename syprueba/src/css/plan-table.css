@@ -1,0 +1,57 @@
+.ui.button.square {
+    position: relative;
+    width: 120px;
+    height: auto;
+
+    padding: 11px;
+    margin: 0px;
+  }
+
+.selectPlan.selected .ui.button.square{
+    background-color: tomato;
+}
+
+.ui.button.square .selectPlan__name {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }  
+
+.ui.button.square .selectPlan__name {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}  
+  
+.ui.button.square::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+
+    .ui.button.square {
+        width: 90px;
+        padding: 5px;
+      }
+}
+
+.red{
+    background-color: red;
+}
