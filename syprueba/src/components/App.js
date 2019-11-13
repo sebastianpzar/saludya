@@ -22,9 +22,9 @@ const App = () => {
                 <Route path="/signup" exact render={(props) => <Step {...props} stepid={'0'} /> } />
                 <Route path="/signup/plans" component={PlansTable}/>
                 <Route path="/signup/registration" exact render={(props) => <Step {...props} stepid={'1'} /> } />
-                <Route path="/signup/regform" exact render={(props) => <FormTemp {...props} > <RegForm /> </FormTemp>} />
+                <Route path="/signup/regform" exact render={(props) => <FormTemp {...props} stepid={'1'} > <RegForm />  </FormTemp>} />
                 <Route path="/signup/payment" exact render={(props) => <Step {...props} stepid={'2'} /> } />
-                <Route path="/signup/payForm" exact render={(props) => <FormTemp {...props} > <PayForm/> </FormTemp>} />
+                <Route path="/signup/payForm" exact render={(props) => <FormTemp {...props} stepid={'2'} > <PayForm/>  </FormTemp>} />
                 <Route path="/signup/confirmation" exact component={Confirmation} />
                 <Footer />
             </div>
