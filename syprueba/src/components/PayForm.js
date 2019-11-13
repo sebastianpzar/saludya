@@ -14,6 +14,7 @@ class PayForm extends React.Component {
     }
 
 
+
     renderInput = ({ input, label, meta }) => {
         const className = `field ${meta.error && meta.touched ? 'error' : ''}`;
         return (
@@ -38,7 +39,7 @@ class PayForm extends React.Component {
                     <Field name="cardnumber" component={this.renderInput} label="Numero de Tarjeta"/>
                     <Field name="expirationdate" component={this.renderInput} label="Fecha de Expiracion"/>
                     <Field name="securitycode" component={this.renderInput} label="Codigo de Seguridad"/>
-                    <button className="ui large button">SUBMIT</button>
+                    <button className="ui large button step-btn">SUBMIT</button>
             </form>
         );
     }
@@ -68,6 +69,7 @@ const validate = (formValues) => {
 
 export default reduxForm({
     form: 'payForm',
+    destroyOnUnmount: false,
     validate
 })(PayForm);
 

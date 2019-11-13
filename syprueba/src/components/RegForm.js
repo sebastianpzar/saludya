@@ -3,6 +3,8 @@ import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import history from './history';
 
+import { connect } from 'react-redux';
+
 class RegForm extends React.Component {
 
     renderError({touched, error}){
@@ -41,7 +43,7 @@ class RegForm extends React.Component {
                 <Field name="ciudad" component={this.renderInput} label="Ciudad"/>
                 <Field name="direccion" component={this.renderInput} label="Direccion"/>
                 <Field name="postal" component={this.renderInput} label="Codigo Postal"/>
-                <button className="ui large button">SUBMIT</button>
+                <button className="ui large button step-btn">SUBMIT</button>
             </form>
         );
     }
@@ -78,7 +80,9 @@ const validate = (formValues) => {
     return errors;
 }
 
+
 export default reduxForm({
     form: 'regForm',
+    destroyOnUnmount: false,
     validate
 })(RegForm);

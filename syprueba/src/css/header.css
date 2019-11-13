@@ -1,3 +1,24 @@
 .ui.secondary.menu.navbar{
-    background-color: grey;
+    background-color:transparent;
+    margin:0px;
+    z-index: 10;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+
+.button.header-logo{
+    max-width: 160px;
+    padding: 5px;
+    margin-left: 20px;
+}
+.button.header-logo img{
+    width: 100%;
+    height: auto;
+}
+
+.ui.large.button.right.item{
+    margin-right: 20px;
+    color: white;
 }

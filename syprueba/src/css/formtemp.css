@@ -1,4 +1,7 @@
 .ui.container .formtemp{
+    padding-top:80px;
+    padding-bottom: 180px;
+
     max-width: 440px;
     margin: 0 auto;
 }

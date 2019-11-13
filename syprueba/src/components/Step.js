@@ -11,12 +11,12 @@ const Step = ( {content, stepid} ) => {
         <div className="ui container step-padding">
             <div className="step-container">
                 <div className="step-logo">
-                    <span style={{fontSize: '3em', color: 'Tomato'}}>
+                    <span style={{fontSize: '3em', color: '#6073fe'}}>
                         <i className="far fa-check-circle"></i>
                     </span>
                 </div>
                 <div className="step-heading">
-                    <h5>STEP { content.step } OF 3</h5>
+                    <h5>PASO { content.step } DE 3</h5>
                     <h1>{content.title}</h1>
                 </div>
                 <div className="step-body">

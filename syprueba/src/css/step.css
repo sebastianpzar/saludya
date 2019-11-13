@@ -7,11 +7,18 @@
     margin: auto;
 
     text-align: center;
+    min-height: 500px;
 }
 
 .ui.large.button.step-btn{
-    width: 340px;
-    margin: 24px auto;
+    color: white;
+    background-color: #6073fe;
+ 
+    font-weight: normal;
+}
+
+.ui.large.button.step-btn:hover{
+    background-color: #2ed0f6;
 }
 
 .step-heading h5{
@@ -24,6 +31,9 @@
 
 .step-body{
     margin-top: 17px;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .step-body p{
     list-style-type: none;
@@ -33,9 +43,11 @@
 }
 .step-body i{
     margin-top: 4px;
-    margin-right: 10px;
-    color: tomato;
+    margin-right: 15px;
+    color: #2ed0f6;
     float: left;
+
+    height: 30px;
 }
 .step-logo{
     margin-top: 100px;
