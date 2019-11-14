@@ -24,6 +24,7 @@ class PlansTable extends React.Component {
         //this.setState({selectedPlan: plan}, ()=>{console.log(this.state)});
         const newClasses = this.state.classes.map((el, index) => {return index === plan ? "selected" : ""});
         this.setState({classes: newClasses});
+
     }
 
     componentDidMount(){
@@ -131,6 +132,7 @@ class PlansTable extends React.Component {
 }
 
 const mapStateToProps = (state) => {
+    console.log(state);
     return({
         savedplan: state.plan
     });

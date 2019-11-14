@@ -1,7 +1,18 @@
 // Actions Creator
-export const selectPlan = (plan) => {
-    return {
-        type: 'SELECT_PLAN',
-        payload: plan
-    };
+
+const planTitles = ["Basico Individual", "Basico Familiar", "Plus Individual", "Plus Familiar"]
+
+export const selectPlan = (plan = null) => {
+    if(plan){
+        return {
+            type: 'SELECT_PLAN',
+            payload: {
+                id: plan,
+                title: planTitles[plan]
+            }
+        };
+    }
+    return{
+        type: ''
+    }
 } ;

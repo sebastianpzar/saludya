@@ -7,7 +7,8 @@ class Confirmation extends React.Component{
     render(){
         return(
             <div className="ui container confirmation">
-                <h1>Redux store</h1>
+                <h1>Confirmation</h1>
+                <p>Check dev tools for redux store values</p>
 
             </div>
         );
@@ -17,7 +18,9 @@ class Confirmation extends React.Component{
 const mapStateToProps = (state) => {
     console.log(state);
     return({
-    
+        regForm: state.form.regForm,
+        payForm: state.form.payForm,
+        plan: state.plan
     });
 }
 
