@@ -14,7 +14,7 @@ const Header = ({layout}) => {
             <Link className="button header-logo" to="/">
                 <img src={layout === 1 ? logo : logo2} alt="saludya logo" />
             </Link>
-            <Link to="/" className="ui large button right item alt">
+            <Link to="/" className={`ui large button right item ${layout === 1 ? '' : 'alt'}`}>
                 Sign in
             </Link>
         </div>

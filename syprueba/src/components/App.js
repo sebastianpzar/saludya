@@ -17,7 +17,8 @@ const App = () => {
     return(
         <Router history={history}>
             <div>
-                <Header />
+                <Route path="/" exact render={(props) => <Header {...props} layout={1} /> } />
+                <Route path="/signup" render={(props) => <Header {...props} layout={2} /> } />
                 <Route path="/" exact component={Landing} />
                 <Route path="/signup" exact render={(props) => <Step {...props} stepid={'0'} /> } />
                 <Route path="/signup/plans" component={PlansTable}/>
